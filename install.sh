@@ -19,11 +19,13 @@ yum install lsof
 # Configure
 rm -f /etc/localtime
 ln -s /usr/share/zoneinfo/America/New_York /etc/localtime
+service crond restart
 
 # Copy files
 cp -Rf ./www/* /var/www 
 cp -f ./bin/* /usr/local/bin 
 cp -f ./sudoers.d/* /etc/sudoers.d 
+cp -f ./cron.d/* /etc/cron.d
 
 # Start apache
 service httpd start
