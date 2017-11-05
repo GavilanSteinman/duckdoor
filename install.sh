@@ -16,10 +16,14 @@ yum install httpd
 yum install vim
 yum install lsof
 
+# Configure
+rm -f /etc/localtime
+ln -s /usr/share/zoneinfo/America/New_York /etc/localtime
+
 # Copy files
-cp ./www /var/www 
-cp ./bin /usr/local/bin 
-cp ./sudoers.d /etc/sudoers.d 
+cp -Rf ./www/* /var/www 
+cp -f ./bin/* /usr/local/bin 
+cp -f ./sudoers.d/* /etc/sudoers.d 
 
 # Start apache
 service httpd start
