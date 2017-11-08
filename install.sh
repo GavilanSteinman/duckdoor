@@ -28,4 +28,6 @@ cp -f ./sudoers.d/* /etc/sudoers.d
 cp -f ./cron.d/* /etc/cron.d
 
 # Start apache
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --reload
 service httpd start
