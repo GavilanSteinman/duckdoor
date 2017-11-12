@@ -1,4 +1,4 @@
 SHELL=/bin/bash
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
 MAILTO=root
-30 6 * * * root /usr/local/bin/opendoor.sh > /tmp/stdout 2>/tmp/error
+30 7 * * * root /usr/local/bin/opendoor.sh > /tmp/stdout 2>/tmp/error

@@ -1,0 +1,4 @@
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+31 7 * * * root /usr/local/bin/closefood.sh > /tmp/stdoutf 2>/tmp/errorf
