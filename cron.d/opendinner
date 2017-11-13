@@ -1,4 +1,4 @@
 SHELL=/bin/bash
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
 MAILTO=root
-29 19 * * * root /usr/local/bin/openfood.sh > /tmp/stdoutf 2>/tmp/errorf
+59 18 * * * root /usr/local/bin/openfood.sh > /tmp/stdoutf 2>/tmp/errorf
