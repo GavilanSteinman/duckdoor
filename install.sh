@@ -15,7 +15,6 @@ fi
 yum install httpd
 yum install vim
 yum install lsof
-yum install speaker-test
 yum install alsa-utils
 yum install wget
 yum install vorbis-tools
@@ -37,7 +36,7 @@ firewall-cmd --permanent --add-port=80/tcp
 firewall-cmd --reload
 service httpd start
 
-echo Note: You may have to restart your system for sound to work.
 usermod -aG audio root
 usermod -aG audio apache
 amixer sset 'PCM' 100%
+echo Note: You may have to restart your system for sound to work.
