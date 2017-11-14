@@ -6,3 +6,4 @@ echo "out" > /sys/class/gpio/gpio22/direction
 
 echo "1" > /sys/class/gpio/gpio22/value
 echo "1" > /sys/class/gpio/gpio4/value
+nohup ogg123 /var/www/html/dinnerbell.ogg
